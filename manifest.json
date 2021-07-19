@@ -1,0 +1,25 @@
+{
+    "name":"Tech News",
+    "description":"Latest Tech News",
+    "version":"1.0",
+    "manifest_version":2,
+    "icons":{
+        "16":"tn.png",
+        "48":"tn.png",
+        "128":"tn.png"
+    },
+    "content_scripts":[
+        {
+            "run_at":"document_start",
+            "matches":["<all_urls>"],
+            "js":["content.js"],
+            "css":["style.css"]
+        }
+    ],
+    "browser_action":{
+        "default_icon":"tn.png",
+        "default_title":"Tech News",
+        "default_popup":"index.html"
+    }
+
+}
